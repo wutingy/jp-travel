@@ -21,7 +21,7 @@
 
 # Day 1 (2/10)：抵達福岡
 
-📌 預計搭 **4:58-8:48 台東-台北**的火車，再轉搭機捷到桃園機場。需於 1/9 提前買票（兩大人）並劃位輪椅座車廂。4:10 起床準備、4:35 家裡出發搭火車。
+📌 2/9 搭 **17:46-21:48 台東-板橋**的火車，先在中和住一晚。2/10 上午 10:30 出發前往機場。
 
 ### 航班資訊
 
@@ -45,12 +45,10 @@
 - 入境、領行李
 - 搭地鐵空港線到大濠公園站
 - 步行到民宿 check-in
-- 大濠公園周邊散步或前往博多/天神逛街
 
 **景點選項**
-- [ ] JR 博多城（AMU PLAZA）[map](https://maps.app.goo.gl/ei5JEgKLe51dhusy7)
-- [ ] 博多阪急百貨 [map](https://maps.app.goo.gl/LBNEugdPRL7J7ovE9)
-- [ ] 博多站屋台村
+- [ ] 福岡麵包超人兒童博物館 [map](https://maps.app.goo.gl/CevXrmKaccU3kFAYA)
+- [ ] 博多站屋台村（晚餐）
 
 **民宿晚餐推薦**
 
@@ -77,7 +75,7 @@
 | **住宿地址** | Japan, 〒810-0075 Fukuoka, Chuo Ward, Minato, 3-chōme−3−４ 宮川運送 港 |
 | **定位點** | [map](https://maps.app.goo.gl/HmpQSkupPJugUWPv5) |
 | **交通位置** | 地鐵大濠公園站，步行 15 分鐘 |
-| **位置優勢** | ✅ 鄰近大濠公園、福岡城跡<br>✅ 前往博多站約 10 分鐘地鐵<br>✅ 前往天神約 5 分鐘地鐵 |
+| **位置優勢** | 前往博多站約 10 分鐘地鐵<br>前往天神約 5 分鐘地鐵 |
 | 設施 | 廚房、洗衣機、兩間房間 |
 | 天數 | 3 晚（Day 1-3） |
 
@@ -94,14 +92,22 @@
 - 大濠公園散步 [map](https://maps.app.goo.gl/vNxBjyCjiXGpehZcA)
 
 **中午**
-- 午餐自由選擇
+
+午餐參考1：福岡 Hotel Il Palazzo 飯店  ホテル イル・パラッツォ<br />
+Semi-Buffet Lunch 11:30-15:00(L.O14:30) 3,500円（700NTD）<br /> 
+[官網連結](https://ilpalazzo.jp/en/lounge)  [map](https://maps.app.goo.gl/vBu67m7uNT41pBcCA)
 
 **下午**
-- 還沒排
 
-**其他選項**
+北九州市立美術館<br />
+300円(大人)<br />
+從JR戶畑車站搭西鐵巴士7M在北九州市立美術館下車
+
+
+**景點選項**
+- [ ] 舊福岡縣公會堂貴賓館 [map](https://maps.app.goo.gl/Y2ETef66ordeJzMU9)
+- [ ] 北九州市立美術館 [map](https://maps.app.goo.gl/RiwbvfDzKMssUSBNA)
 - [ ] 海之中道海濱公園 [map](https://maps.app.goo.gl/VrAiQcL2PWWM4YYM9)
-
 
 ---
 
@@ -187,8 +193,9 @@
 - 午餐：太宰府當地料理
 
 **下午**
-- 回民宿休息
 
+- [ ] 九州國立博物館 [map](https://maps.app.goo.gl/V3ixxeY28xn1c8VT6)
+- 回民宿休息
 
 ---
 
@@ -221,11 +228,22 @@
   - ⚠️ **取車時記得詢問：福岡機場附近推薦的加油站位置**（還車前需加滿油）
 - 12:30 開車前往由布院（車程約 1.5-2 小時）
 
-TODO: 路上要停的點，還沒查
 
 **下午**
-- 14:30-15:00 抵達由布院民宿 check-in、放行李
-- 民宿休息、泡湯 或 由布院溫泉街散步、金鱗湖
+
+停留點 A：小鹿田焼の里（陶器村）[map](https://maps.app.goo.gl/KdQfF77NbSbtPt1V9)
+- 特色：傳統陶器村落、工藝品
+- 缺點：沿路不會經過，距離日田市 30 分鐘車程，若精神好可考慮前往，可能需要 2 小時逛逛。
+
+
+停留點 B：日田市（豆田町老街）[map](https://maps.app.goo.gl/syKbGBEo55wHgdYZ8)
+- 特色：江戶時代老街、傳統建築、小店
+- 適合原因：悠閒散步、吃午餐、沿路會經過
+
+**晚上**
+
+- 抵達由布院民宿 check-in、放行李
+- 民宿休息、泡湯
 
 
 #### 住宿資訊
