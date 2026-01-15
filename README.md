@@ -118,21 +118,6 @@ TODO:
 
 # Day 2 (2/11)：福岡市區
 
-💡 **福岡市區深度遊**
-
-### 行程安排
-
-**早上**
-- 福岡城跡 [map](https://maps.app.goo.gl/Zds3J82yEcbvPq8V7)
-- 大濠公園散步 [map](https://maps.app.goo.gl/vNxBjyCjiXGpehZcA)
-
-**中午**
-
-午餐參考1：福岡 Hotel Il Palazzo 飯店  ホテル イル・パラッツォ<br />
-Semi-Buffet Lunch 11:30-15:00(L.O14:30) 3,500円（700NTD）<br /> 
-[官網連結](https://ilpalazzo.jp/en/lounge)  [map](https://maps.app.goo.gl/vBu67m7uNT41pBcCA)
-
-**下午**
 
 ### 太宰府半日遊
 
@@ -155,10 +140,17 @@ Semi-Buffet Lunch 11:30-15:00(L.O14:30) 3,500円（700NTD）<br />
 - 太宰府參道逛街（梅枝餅、伴手禮）
 - 星巴克太宰府店休息（隈研吾設計）[map](https://maps.app.goo.gl/RgmxcBU6LYvZ5W1M9)
 - [ ] 九州國立博物館 [map](https://maps.app.goo.gl/V3ixxeY28xn1c8VT6)
-- 回民宿休息
+
+午餐參考1：福岡 Hotel Il Palazzo 飯店  ホテル イル・パラッツォ<br />
+Semi-Buffet Lunch 11:30-15:00(L.O14:30) 3,500円（700NTD）<br /> 
+[官網連結](https://ilpalazzo.jp/en/lounge)  [map](https://maps.app.goo.gl/vBu67m7uNT41pBcCA)
+
 
 **其他景點選項**
-- [ ] 舊福岡縣公會堂貴賓館 [map](https://maps.app.goo.gl/Y2ETef66ordeJzMU9)
+- 舊福岡縣公會堂貴賓館 [map](https://maps.app.goo.gl/Y2ETef66ordeJzMU9)
+- 福岡城跡 [map](https://maps.app.goo.gl/Zds3J82yEcbvPq8V7)
+- 大濠公園散步 [map](https://maps.app.goo.gl/vNxBjyCjiXGpehZcA)
+
 
 ---
 
@@ -234,6 +226,7 @@ Semi-Buffet Lunch 11:30-15:00(L.O14:30) 3,500円（700NTD）<br />
 ### 行程安排
 
 **早上**
+- 吃個早午餐，準備退房，若小孩要放電，可去公園玩
 - 11:00 福岡民宿退房
 - 搭地鐵前往博多站
 
