@@ -7,8 +7,8 @@
 ## 行前準備
 
 - 🧳 [行李清單](packing-list.md)
-- 🚗 [租車資訊](rental-car-v2.md)
-- ✈️ [機票](Itinerary_TPE_FUK_10-02-2026_41521172815.pdf)
+- 🚗 [租車資訊](rental-car-v2.md)｜ [pdf](rental-car-v2.pdf)
+- ✈️ [機票 pdf](Itinerary_TPE_FUK_10-02-2026_41521172815.pdf)
 
 ## 行程總覽
 
