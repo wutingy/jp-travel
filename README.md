@@ -7,7 +7,8 @@
 ## 行前準備
 
 - 🧳 [行李清單](packing-list.md)
-- 🚗 [租車資訊](rental-car-v2.md)｜ [pdf](rental-car-v2.pdf)
+- � [購物清單](shopping-list.md)
+- �🚗 [租車資訊](rental-car-v2.md)｜ [pdf](rental-car-v2.pdf)
 - ✈️ [機票 pdf](Itinerary_TPE_FUK_10-02-2026_41521172815.pdf)
 - [記帳連結](https://docs.google.com/spreadsheets/d/1eOeyTPkGxzSm73gcxh3aShQA2pKqhvlZ1NHxCkAYd0U/edit?usp=sharing)
 
@@ -55,14 +56,8 @@
 - 可使用 IC 卡（ICOCA、Suica、PASMO 等）
 
 ### 購物項目
-查住宿附近的麵包店、超市
-- 尿布
-- 牛奶
-- 買水果、雞蛋
-- 吐司、麵包
-- 便當
-- 抹茶粉
-- 三鐵防寒衣？
+
+📝 [購物清單](shopping-list.md)
 
 ### 行程安排
 
