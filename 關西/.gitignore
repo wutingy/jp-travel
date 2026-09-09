@@ -28,6 +28,3 @@ Temporary Items
 *.swp
 *.swo
 *~
-
-# Claude Code 本地設定
-.claude/
