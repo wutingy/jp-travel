@@ -9,9 +9,11 @@ title: 日本旅遊
 ## 規劃中
 
 ### 關西（京都・大阪・滋賀）
+
+日期暫定：11/20–11/29（10 天 9 夜）
+
 - [行程（家庭討論版）](kansai/itinerary-family.md)
 - [行程（圖片版 HTML）](kansai/itinerary-visual.html)
-- [6 天骨架草稿](kansai/README.md)
 - [機票參考](kansai/flights.md)
 
 ## 已完成（archived）
