@@ -14,6 +14,7 @@ title: 日本旅遊
 
 - [行程（家庭討論版）](kansai/itinerary-family.md)
 - [行程（圖片版 HTML）](kansai/itinerary-visual.html)
+- [機票資訊](kansai/flights.md)
 
 ## 已完成（archived）
 
