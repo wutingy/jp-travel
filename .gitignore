@@ -32,6 +32,8 @@ Temporary Items
 # Claude Code 本地設定
 .claude/
 
-# 含個資的本機檔（護照號碼、訂位資料等）——public repo，絕不進版控
+# 含個資的本機檔（護照號碼、訂位資料、訂票截圖等）——public repo，絕不進版控
 *.local.md
 *.local.*
+*.local
+*.local/
