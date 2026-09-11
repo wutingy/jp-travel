@@ -15,6 +15,7 @@ title: 日本旅遊
 - [行程（詳細版）](kansai/itinerary-family.md)
 - [行程（精簡圖片版）](kansai/itinerary-visual.html)
 - [機票資訊](kansai/flights.md)
+- [待辦事項](kansai/todo.md)
 
 ## 已完成（archived）
 
