@@ -2,3 +2,10 @@ title: 日本旅遊
 description: 家庭旅遊行程規劃
 theme: jekyll-theme-cayman
 baseurl: "/jp-travel"
+
+# 讓所有頁面預設套用 Cayman 主題版型（含子資料夾的 .md）
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
