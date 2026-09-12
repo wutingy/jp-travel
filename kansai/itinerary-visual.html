@@ -33,6 +33,10 @@
   .row figure img { aspect-ratio: 3 / 2; object-fit: cover; }
   @media (max-width: 520px) { .row { flex-direction: column; } }
   figcaption { text-align: center; color: var(--muted); font-size: .8rem; margin-top: 6px; }
+  .intro { margin: 10px 0 0; background: #f2f2f2; border-radius: 14px; padding: 14px 16px; }
+  .intro h3 { font-size: .98rem; margin: 0 0 2px; line-height: 1.3; }
+  .intro p { font-size: .9rem; color: #333; margin: 0; line-height: 1.6; }
+  .intro + .intro { margin-top: 10px; }
   footer { text-align: center; color: var(--muted); font-size: .78rem; margin-top: 56px; border-top: 1px solid var(--frame); padding-top: 20px; }
 </style>
 </head>
@@ -53,7 +57,9 @@
     <div class="label">Day 1（11/21）　抵達關西 → 京都</div>
     <div class="spots">Haruka 直達京都 → 東山寄放行李 → 花見小路、五條／四條大橋賞鴨川 → 河畔咖啡歇腳 → 15:00 後 check-in</div>
   </div>
+  <div class="intro"><h3>花見小路</h3><p>祇園最具代表性的石板街道，兩側是傳統茶屋與町家，保留京都花街風情；傍晚偶爾能遇見前往座敷的藝妓、舞妓（請勿追拍）。</p></div>
   <figure><img src="images/kamogawa.jpg" alt="鴨川"><figcaption>鴨川・先斗町納涼床（四条大橋一帶）</figcaption></figure>
+  <div class="intro"><h3>鴨川</h3><p>貫穿京都市區的母親之河，河岸是市民散步、情侶等距而坐的日常風景；夏季四条一帶的「納涼床」餐廳沿河搭起，別具風情。</p></div>
   <div class="day">
     <div class="label">Day 2（11/22）　清水寺・二年坂・三年坂・京瓷美術館</div>
     <div class="spots">住宿東山一帶步行；清水寺 → 三年坂（產寧坂）→ 二年坂（二寧坂）→ 京都市京瓷美術館・岡崎公園（步行約 20 分）</div>
@@ -62,7 +68,10 @@
     <figure><img src="images/kiyomizu.jpg" alt="清水寺"><figcaption>清水寺</figcaption></figure>
     <figure><img src="images/ninenzaka.jpg" alt="二年坂・三年坂"><figcaption>二年坂・三年坂</figcaption></figure>
   </div>
+  <div class="intro"><h3>清水寺</h3><p>京都最古老的寺院之一、世界遺產。「清水舞台」以懸空木造工法建於崖上，可俯瞰京都市景與楓紅。</p></div>
+  <div class="intro"><h3>二年坂・三年坂</h3><p>通往清水寺的石坂古道，兩旁老町家、茶屋與伴手禮店林立，是體驗京都風情的必走路段。</p></div>
   <figure><img src="images/kyocera.jpg" alt="京都市京瓷美術館"><figcaption>京都市京瓷美術館（青木淳）</figcaption></figure>
+  <div class="intro"><h3>京都市京瓷美術館</h3><p>京都最古老的公立美術館，經建築師青木淳、西澤徹夫改修，保留昭和年代外觀並新增玻璃帷幕入口；館前岡崎公園開闊，適合散步歇腳。</p></div>
   <div class="day">
     <div class="label">Day 3（11/23）　京都水族館・桂離宮／購物</div>
     <div class="spots">上午：思因單獨去桂離宮，其他人到京都水族館（梅小路公園；太累可不去）→ 傍晚：河原町購物（無印良品 京都BAL、新京極運動用品）</div>
@@ -71,11 +80,15 @@
     <figure><img src="images/kyoto-aquarium.jpg" alt="京都水族館"><figcaption>京都水族館（梅小路公園）</figcaption></figure>
     <figure><img src="images/katsura.jpg" alt="桂離宮"><figcaption>桂離宮（松琴亭・池泉回遊式庭園）</figcaption></figure>
   </div>
+  <div class="intro"><h3>京都水族館</h3><p>位於梅小路公園內的內陸型水族館，以人工海水飼育；有大水槽、海豹海豚與京都特有的山椒魚，適合親子。</p></div>
+  <div class="intro"><h3>桂離宮</h3><p>江戶初期皇室別墅，池泉回遊式庭園的代表作，被譽為日本庭園美學的巔峰；採預約導覽制。</p></div>
   <div class="day">
     <div class="label">Day 4（11/24）　宇治</div>
     <div class="spots">京阪電車前往；平等院・鳳凰堂、宇治神社・宇治上神社、宇治川散步</div>
   </div>
   <figure><img src="images/byodoin.jpg" alt="平等院"><figcaption>平等院・鳳凰堂（宇治）</figcaption></figure>
+  <div class="intro"><h3>平等院・鳳凰堂</h3><p>世界遺產，日幣十圓硬幣上的鳳凰堂即在此。臨池而建的阿彌陀堂倒映水面，是平安時代淨土信仰與建築美學的極致代表。</p></div>
+  <div class="intro"><h3>宇治茶舖</h3><p>宇治是抹茶名產地，老茶舖林立：<strong>中村藤吉本店</strong>招牌生茶凍、本店為登錄有形文化財；<strong>伊藤久右衛門</strong>的抹茶百匯與抹茶蕎麥麵人氣高，參道／本店皆可內用；宇治橋畔的<strong>通圓</strong>創業近 850 年，可臨川品茶配糰子。用餐時段常需候位。</p></div>
 
   <h2>Hub 2　琵琶湖 ×4 晚
     <span class="note">環湖自駕往返，據點近江舞子</span>
@@ -87,21 +100,26 @@
     <div class="drive">京都→美山 1h20 → 近江舞子 1h55（離京取車自駕）</div>
   </div>
   <figure><img src="images/miyama1.jpg" alt="美山町茅葺之里"><figcaption>美山町茅葺之里（移動日順遊）</figcaption></figure>
+  <div class="intro"><h3>美山町茅葺之里</h3><p>京都近郊山村，保存數十棟茅葺（かやぶき）合掌屋，列為重要傳統建造物群保存地區，四季景色宜人，是京都往琵琶湖途中順遊的好地方。</p></div>
   <div class="day">
     <div class="label">Day 6（11/26）　MIHO MUSEUM（全天）</div>
     <div class="spots">貝聿銘，核心亮點</div>
   </div>
   <figure><img src="images/miho.jpg" alt="MIHO MUSEUM"><figcaption>MIHO MUSEUM 美秀美術館（貝聿銘）</figcaption></figure>
+  <div class="intro"><h3>MIHO MUSEUM 美秀美術館</h3><p>貝聿銘設計，藏身信樂山林間。以〈桃花源記〉為靈感，需穿過櫻花隧道與吊橋才抵達主館；80% 建築埋於地下，館藏橫跨古埃及、西亞到東亞古文明。</p></div>
   <div class="day">
     <div class="label">Day 7（11/27）　佐川美術館・La Collina</div>
     <div class="spots">佐川美術館（守山）→ La Collina 近江八幡（藤森照信）</div>
   </div>
   <figure><img src="images/lacollina.jpg" alt="La Collina 近江八幡"><figcaption>La Collina 近江八幡（藤森照信）</figcaption></figure>
+  <div class="intro"><h3>La Collina 近江八幡</h3><p>和菓子品牌「たねや／CLUB HARIE」的旗艦園區，由建築師藤森照信設計，草屋頂建築融入田園自然；現場可買現烤年輪蛋糕，園區廣闊好拍。</p></div>
   <div class="day">
     <div class="label">Day 8（11/28）　高島水杉・白鬚神社</div>
     <div class="spots">メタセコイア並木 → 白鬚神社（湖中鳥居夕陽）</div>
   </div>
   <figure><img src="images/takashima-metasequoia.jpg" alt="高島水杉並木大道"><figcaption>高島水杉並木大道</figcaption></figure>
+  <div class="intro"><h3>高島水杉並木大道</h3><p>約 2.4 公里、500 餘棵水杉（メタセコイア）夾道的並木大道，秋末轉為紅褐、冬日可見雪景，是滋賀最具代表性的四季風景之一。</p></div>
+  <div class="intro"><h3>白鬚神社</h3><p>近江最古老的神社，主祀猿田彥命，以佇立於琵琶湖中的紅色鳥居聞名，有「近江嚴島」之稱。清晨與黃昏時湖面倒映鳥居格外動人（面向湖側需橫越車道，注意來車）。</p></div>
 
   <h2>返程</h2>
   <div class="day">
