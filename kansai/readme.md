@@ -9,7 +9,7 @@ title: 關西家庭旅遊行程
 ## 行前準備
 
 - 🖼️ [行程（精簡圖片版）](itinerary-visual.html)
-- 🏨 [住宿資訊與規範](accommodation.md)（東山 ×4、近江舞子 ×4；規範與費用）
+- 🏨 [住宿資訊與規範](accommodation.md)（[圖片版](accommodation.html)；東山 ×4、近江舞子 ×4）
 - ✅ [待辦事項](todo.md)（火車票、48h 劃位、房東確認）
 - ✈️ [機票資訊](flights.md)（已訂・虎航；去程同班、回程 A 高雄 B 台北）
 - 🧳 行李清單（待建）
