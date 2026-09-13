@@ -55,6 +55,16 @@ title: 關西家庭旅遊行程
 4. 河畔咖啡廳午茶、歇腳
 5. 15:00 後回飯店辦理入住
 
+### 推薦餐廳
+
+- ⭐ [**露瑚**](https://maps.app.goo.gl/F9xB9ryx2fKjKpWv7)（首推）：京料理・會席，鴨川景觀，有美食也有好景色
+- [**半兵衛麸 本店**](https://maps.app.goo.gl/2JVvwnwrDmuur17y9)：麩・湯葉（豆皮）料理老店，套餐制
+- [**池半分室**](https://maps.app.goo.gl/g7gPLqgx6vaBuUfs5)：茶室（午茶・甜點，無鹹食）
+- [**四季 よし菜 先斗町**](https://maps.app.goo.gl/tSh5irP3L3CYrWzYA)：京料理・會席
+- [**いしがま亭（石釜亭）**](https://maps.app.goo.gl/ApyMhqPo4GYcXQZt5)：京鴨料理，石窯燒烤・京鴨涮涮鍋
+
+> 💡 以上多為熱門店，加上 11 月下旬紅葉旺季，**建議出發前 1～2 週先訂位**（京料理／會席類尤其）。鴨川川床為 5～9 月限定，11 月為室內用餐。
+
 ---
 
 # Day 2 (11/22)：清水寺・二年坂・三年坂・京瓷美術館
@@ -104,6 +114,17 @@ title: 關西家庭旅遊行程
 4. 午餐、甜點（表參道或川邊）
 5. 河岸茶屋下午茶
 6. 搭電車返回京都市區（表參道店家約 17:00 打烊）
+
+### 推薦餐廳
+
+- [**京うどん 三よし屋**](https://maps.app.goo.gl/RjKZ5mccSPVNw4CBA)：京都烏龍麵
+- [**そば処 ながの**](https://maps.app.goo.gl/6GN9gY3sucg5FyWr7)：手打蕎麥麵
+- [**autumn the bakery**](https://maps.app.goo.gl/pUKJoNUnzQ5RMjre8)：麵包店
+- [**中村藤吉（平等院店）**](https://maps.app.goo.gl/8EkLn44oPuaYLWZw9)：抹茶甜點・招牌生茶凍
+- [**伊藤久右衛門（平等院店）**](https://maps.app.goo.gl/LcVchU2ZqLHvSKW3A)：抹茶百匯・抹茶蕎麥麵
+- [**通圓本店**](https://maps.app.goo.gl/M8sCQY7UsaYyrDFC8)：宇治橋畔茶屋，品茶配糰子
+
+> 💡 用餐時段常需候位。
 
 ---
 
