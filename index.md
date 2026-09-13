@@ -12,11 +12,11 @@ title: 日本旅遊
 
 日期暫定：11/21–11/29（9 天 8 夜）
 
-- [行程（詳細版）](kansai/readme.md)
+- [行程（詳細版）](kansai/index.html)
 - [行程（精簡圖片版）](kansai/itinerary-visual.html)
 - [住宿資訊與規範](kansai/accommodation.html)
-- [機票資訊](kansai/flights.md)
-- [待辦事項](kansai/todo.md)
+- [機票資訊](kansai/flights.html)
+- [待辦事項](kansai/todo.html)
 
 ## 已完成（archived）
 
