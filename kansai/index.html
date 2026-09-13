@@ -47,11 +47,47 @@
   .card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.1); text-decoration: none; }
   .card .ico { font-size: 1.4rem; line-height: 1; }
   .card .ttl { font-size: .95rem; font-weight: 700; }
-  .card .desc { font-size: .78rem; color: var(--muted); line-height: 1.4; }
   @media (max-width: 520px) { .cards { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
   hr { border: 0; border-top: 1px solid var(--frame); margin: 40px 0; }
   strong { font-weight: 700; }
   footer { text-align: center; color: var(--muted); font-size: .78rem; margin-top: 56px; border-top: 1px solid var(--frame); padding-top: 20px; }
+  .ilink {
+    color: #1256a0; text-decoration: underline; text-underline-offset: 2px;
+    text-decoration-style: dotted; cursor: pointer;
+  }
+  .modal[hidden] { display: none; }
+  .modal {
+    position: fixed; inset: 0; z-index: 50;
+    display: flex; align-items: flex-end; justify-content: center;
+  }
+  .modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.45); }
+  .modal-sheet {
+    position: relative; width: 100%; max-width: 560px; max-height: 88vh;
+    background: var(--bg); border-radius: 18px 18px 0 0; overflow: hidden;
+    display: flex; flex-direction: column; animation: sheetUp .22s ease;
+    box-shadow: 0 -8px 30px rgba(0,0,0,.2);
+  }
+  @keyframes sheetUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+  .modal-head {
+    display: flex; align-items: center; gap: 10px; padding: 16px 18px;
+    border-bottom: 1px solid var(--frame); flex: none;
+  }
+  .modal-head h3 { margin: 0; font-size: 1.02rem; }
+  .modal-x {
+    margin-left: auto; border: 0; background: var(--box); color: var(--fg);
+    width: 34px; height: 34px; border-radius: 50%; font-size: 1.3rem; line-height: 1;
+    cursor: pointer; flex: none;
+  }
+  .modal-body { padding: 16px 18px 26px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .modal-body h4 { margin: 18px 0 6px; font-size: .95rem; }
+  .modal-body h4:first-child { margin-top: 0; }
+  .modal-body ul { margin: 6px 0; }
+  .modal-body li { margin: 5px 0; font-size: .92rem; }
+  body.modal-open { overflow: hidden; }
+  @media (min-width: 560px) {
+    .modal { align-items: center; padding: 20px; }
+    .modal-sheet { border-radius: 18px; max-height: 82vh; animation: none; }
+  }
 </style>
 </head>
 <body>
@@ -63,11 +99,11 @@
   </header>
 
   <div class="cards">
-    <a class="card" href="itinerary-visual.html"><span class="ico">🖼️</span><span class="ttl">行程與景點介紹</span><span class="desc">精簡圖片版</span></a>
-    <a class="card" href="accommodation.html"><span class="ico">🏨</span><span class="ttl">住宿資訊與規範</span><span class="desc">兩據點住宿</span></a>
-    <a class="card" href="todo.html"><span class="ico">✅</span><span class="ttl">待辦事項</span><span class="desc">出發前準備</span></a>
-    <a class="card" href="flights.html"><span class="ico">✈️</span><span class="ttl">機票資訊</span><span class="desc">去回程航班</span></a>
-    <a class="card" href="rental-car.html"><span class="ico">🚗</span><span class="ttl">租車預估</span><span class="desc">琵琶湖自駕</span></a>
+    <a class="card" href="itinerary-visual.html"><span class="ico">🖼️</span><span class="ttl">行程與景點介紹</span></a>
+    <a class="card" href="accommodation.html"><span class="ico">🏨</span><span class="ttl">住宿資訊與規範</span></a>
+    <a class="card" href="todo.html"><span class="ico">✅</span><span class="ttl">待辦事項</span></a>
+    <a class="card" href="flights.html"><span class="ico">✈️</span><span class="ttl">機票資訊</span></a>
+    <a class="card" href="rental-car.html"><span class="ico">🚗</span><span class="ttl">租車預估</span></a>
   </div>
 
   <h2>Day 0（11/20）　台東 → 板橋會合</h2>
@@ -87,7 +123,7 @@
     </li>
     <li>京都站 → 住宿（東山・祇園）：
       <ul>
-        <li><strong>市巴士 206（一車直達）</strong>：京都站前搭 → 「祇園」或「清水道」下車</li>
+        <li><strong>市巴士 206（一車直達）</strong>：京都站前搭 → 「祇園」或「清水道」下車（<span class="ilink" role="button" tabindex="0" data-modal="bus206">詳細搭乘教學</span>）</li>
         <li>或 <strong>JR 奈良線</strong>到「東福寺」→ 出站換<strong>京阪本線</strong>（京阪電車，不同公司、需分開購票）到「祇園四條」（約 10 分）</li>
       </ul>
     </li>
@@ -239,5 +275,80 @@
 
   <footer>關西家庭旅遊行程　·　<a href="itinerary-visual.html">行程與景點介紹 →</a></footer>
 </main>
+
+<div class="modal" id="bus206" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="bus206-title">
+    <div class="modal-head">
+      <h3 id="bus206-title">市巴士 206　京都站 → 東山</h3>
+      <button class="modal-x" type="button" data-close aria-label="關閉">×</button>
+    </div>
+    <div class="modal-body">
+      <p>從 JR 下車到搭上 206 號巴士，流程非常直覺，只要記住出站出口與月台編號即可。</p>
+
+      <h4>步驟一：出站（認明「中央口」）</h4>
+      <ul>
+        <li>搭 JR 特急 Haruka 抵京都站後，順指標往 <strong>「中央口」（Central Exit）</strong> 走。</li>
+        <li>出中央口剪票口後，正前方就是高高的 <strong>京都塔</strong>。</li>
+      </ul>
+
+      <h4>步驟二：走出車站，前往站前巴士總站</h4>
+      <ul>
+        <li>看到京都塔後往正前方門出站，門外就是 <strong>「京都站前巴士總站（京都駅前バスターミナル）」</strong>。</li>
+        <li>地面與標示牌都有清楚的英文分區（A、B、C、D 候車區）。</li>
+      </ul>
+
+      <h4>步驟三：尋找「D2」乘車處</h4>
+      <ul>
+        <li>往右前方找 <strong>「D 區」的「D2」月台</strong>。</li>
+        <li>D2 主要前往：三十三間堂・清水寺・祇園・北大路バスターミナル。</li>
+        <li>認明排隊線上的 <strong>市巴士 206 號（經東山通／東山経由）</strong>。</li>
+      </ul>
+
+      <div class="callout">
+        💡 <strong>重要注意事項</strong>
+        <ul>
+          <li><strong>千萬別搭錯方向</strong>：206 是環狀線。往「清水道」「祇園」<strong>一定要在 D2</strong>（經三十三間堂、東山通）；跑到別的月台搭到往「千本通／四条大宮」的 206，會繞京都西側一大圈。</li>
+          <li><strong>乘車與付款</strong>：後門上車、前門下車付款；可用 ICOCA／Suica 感應，或現金（單程均一 230 日圓）。</li>
+          <li><strong>備選（D2 人多時）</strong>：同在 D 區可搭 市巴士 86、106 號 或觀光特急 EX100，同樣到「五條坂」「清水道」。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var openBtns = document.querySelectorAll('[data-modal]');
+  function open(id) {
+    var m = document.getElementById(id);
+    if (!m) return;
+    m.hidden = false;
+    document.body.classList.add('modal-open');
+    var x = m.querySelector('.modal-x');
+    if (x) x.focus();
+  }
+  function close(m) {
+    m.hidden = true;
+    document.body.classList.remove('modal-open');
+  }
+  openBtns.forEach(function (b) {
+    b.addEventListener('click', function () { open(b.getAttribute('data-modal')); });
+    b.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(b.getAttribute('data-modal')); }
+    });
+  });
+  document.querySelectorAll('.modal').forEach(function (m) {
+    m.querySelectorAll('[data-close]').forEach(function (c) {
+      c.addEventListener('click', function () { close(m); });
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal:not([hidden])').forEach(close);
+    }
+  });
+})();
+</script>
 </body>
 </html>
