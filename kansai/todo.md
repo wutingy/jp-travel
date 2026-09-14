@@ -12,7 +12,7 @@ title: 待辦事項
 
 ## 入境手續
 
-- [ ] **幫全員申請日本線上入關資料登記（[Visit Japan Web](https://www.vjw.digital.go.jp/main/#/vjwplo001)）** — 4 大人＋2 小孩，取得入境審查／海關 QR code
+- [x] **幫全員申請日本線上入關資料登記（[Visit Japan Web](https://www.vjw.digital.go.jp/main/#/vjwplo001)）** — 4 大人＋2 小孩，取得入境審查／海關 QR code
 
 ## 🚗 自駕
 
