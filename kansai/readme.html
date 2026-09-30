@@ -41,11 +41,11 @@
   .card {
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     text-align: center; gap: 8px; padding: 22px 12px; min-height: 120px;
-    background: var(--box); border-radius: 16px;
+    background: #f8f8f8; border-radius: 16px;
     color: var(--fg); text-decoration: none; transition: transform .12s ease, box-shadow .12s ease;
   }
   .card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.1); text-decoration: none; }
-  .card .ico { font-size: 1.4rem; line-height: 1; }
+  .card .ico { width: 28px; height: 28px; display: block; }
   .card .ttl { font-size: .95rem; font-weight: 700; }
   @media (max-width: 520px) { .cards { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
   .daynav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 8px 0 28px; }
@@ -106,12 +106,12 @@
   </header>
 
   <div class="cards">
-    <a class="card" href="packing-list.html"><span class="ico">🎒</span><span class="ttl">行李清單</span></a>
-    <a class="card" href="itinerary-visual.html"><span class="ico">🖼️</span><span class="ttl">景點介紹</span></a>
-    <a class="card" href="accommodation.html"><span class="ico">🏨</span><span class="ttl">住宿資訊</span></a>
-    <a class="card" href="todo.html"><span class="ico">✅</span><span class="ttl">待辦事項</span></a>
-    <a class="card" href="flights.html"><span class="ico">✈️</span><span class="ttl">機票資訊</span></a>
-    <a class="card" href="rental-car.html"><span class="ico">🚗</span><span class="ttl">租車資訊</span></a>
+    <a class="card" href="packing-list.html"><img class="ico" src="images/icons/luggage.png" alt="" width="28" height="28"><span class="ttl">行李清單</span></a>
+    <a class="card" href="itinerary-visual.html"><img class="ico" src="images/icons/image.png" alt="" width="28" height="28"><span class="ttl">景點介紹</span></a>
+    <a class="card" href="accommodation.html"><img class="ico" src="images/icons/hotel.png" alt="" width="28" height="28"><span class="ttl">住宿資訊</span></a>
+    <a class="card" href="todo.html"><img class="ico" src="images/icons/bookmark-check.png" alt="" width="28" height="28"><span class="ttl">待辦事項</span></a>
+    <a class="card" href="flights.html"><img class="ico" src="images/icons/plane-takeoff.png" alt="" width="28" height="28"><span class="ttl">機票資訊</span></a>
+    <a class="card" href="rental-car.html"><img class="ico" src="images/icons/car.png" alt="" width="28" height="28"><span class="ttl">租車資訊</span></a>
   </div>
 
   <div style="text-align: center; margin: 16px 0 24px; font-size: .9rem;">
