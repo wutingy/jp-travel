@@ -33,7 +33,7 @@ title: 待辦事項
 
 ## 🍽️ 餐廳訂位
 
-- [ ] **[露瑚](https://maps.app.goo.gl/F9xB9ryx2fKjKpWv7)**（Day 1・首推）— 鴨川景觀，熱門店，出發前先訂位
+- [ ] **[Takasawa（たかさわ）](https://maps.app.goo.gl/GUaQVDD7UNwJcH3D6)**（Day 1 晚餐・主選）— 僅接受預訂，出發前先訂位
 
 ## 💺 線上劃位（沒有預選位 → 48 小時一開放就搶相鄰位）
 

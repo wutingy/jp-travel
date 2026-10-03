@@ -57,6 +57,8 @@
   h2[id] { scroll-margin-top: 16px; }
   hr { border: 0; border-top: 1px solid var(--frame); margin: 40px 0; }
   strong { font-weight: 700; }
+  .pick { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; background: var(--line); color: var(--bg); font-size: .72rem; font-weight: 700; vertical-align: 2px; }
+  .pick.alt { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1px var(--line); }
   footer { text-align: center; color: var(--muted); font-size: .78rem; margin-top: 56px; border-top: 1px solid var(--frame); padding-top: 20px; }
   .ilink {
     color: #1256a0; text-decoration: underline; text-underline-offset: 2px;
@@ -167,14 +169,13 @@
 
   <h3>住宿附近餐廳</h3>
   <ul>
+    <li><a href="https://maps.app.goo.gl/GUaQVDD7UNwJcH3D6"><strong>Takasawa（たかさわ）</strong></a><span class="pick">當天主選</span>：TODO 預訂第一天晚上</li>
     <li><a href="https://maps.app.goo.gl/YacYrELKtKbGxKyeA"><strong>Village</strong></a>：住宿附近麵包店</li>
     <li><a href="https://maps.app.goo.gl/dy8sBQtLLuAKUMZE6"><strong>かわらばやし（川林）</strong></a>：京都料理・甲魚（鱉）料理</li>
     <li><a href="https://maps.app.goo.gl/tz6PsTNYivHP6RbLA"><strong>Ganchi（がんち）</strong></a>：日式炸豬排</li>
-    <li><a href="https://maps.app.goo.gl/GUaQVDD7UNwJcH3D6"><strong>Takasawa（たかさわ）</strong></a>：⚠️ 僅接受預訂</li>
-    <li><a href="https://maps.app.goo.gl/UvRCmakTnPL9y7hX6"><strong>Shinbo（しんぼ）</strong></a>：烏龍麵</li>
     <li><a href="https://maps.app.goo.gl/EEgCZPVkAGfS6fyD9"><strong>Hyde&amp;Away（京都東山店）</strong></a>：咖啡・甜點</li>
     <li><a href="https://maps.app.goo.gl/QcZqPDBLJmAWbAiR6"><strong>pastry boutique</strong></a>：西點・甜點</li>
-    <li><a href="https://maps.app.goo.gl/DfNh5ZVeaoSdiaqC9"><strong>花＆果樹之東山庭園</strong></a>：自然庭園咖啡・輕食</li>
+    <li><a href="https://maps.app.goo.gl/DfNh5ZVeaoSdiaqC9"><strong>花＆果樹之東山庭園</strong></a><span class="pick alt">備</span>：自然庭園咖啡・輕食</li>
     <li><a href="https://maps.app.goo.gl/gTohjMWiEek3U38z9"><strong>cafe nido</strong></a>：咖啡店</li>
   </ul>
 
@@ -200,11 +201,10 @@
     <li><strong>回程</strong>：京阪宇治站原路搭京阪宇治線，於「中書島」轉京阪本線回京阪「東福寺」（表參道店家約 17:00 打烊；<span class="ilink" role="button" tabindex="0" data-modal="transit-uji">詳細搭乘教學</span>）</li>
   </ol>
   <div class="callout">💡 11/22 為三連休週日、宇治人潮較多。<strong>平等院鳳凰堂「內部參觀」</strong>為另購 ¥300、限時段、當日現場售且名額有限，旺季易售完——<strong>一到先去領號</strong>（庭園與鳳翔館不受影響）；用餐時段常需候位。</div>
-  <div class="callout">🎋 備案：宇治提早收，回程順路去 <strong>石清水八幡宮</strong>（男山纜車・愛迪生紀念碑；<span class="ilink" role="button" tabindex="0" data-modal="iwashimizu">備案行程</span>）</div>
 
   <h3>推薦餐廳（宇治）</h3>
   <ul>
-    <li><a href="https://maps.app.goo.gl/RjKZ5mccSPVNw4CBA"><strong>京うどん 三よし屋</strong></a>：京都烏龍麵</li>
+    <li><a href="https://maps.app.goo.gl/RjKZ5mccSPVNw4CBA"><strong>京うどん 三よし屋</strong></a><span class="pick">當天主選</span>：京都烏龍麵</li>
     <li><a href="https://maps.app.goo.gl/6GN9gY3sucg5FyWr7"><strong>そば処 ながの</strong></a>：手打蕎麥麵</li>
     <li><a href="https://maps.app.goo.gl/pUKJoNUnzQ5RMjre8"><strong>autumn the bakery</strong></a>：麵包店</li>
     <li><a href="https://maps.app.goo.gl/gwjqL4fTTuv5d8hS6"><strong>中村藤吉（平等院店）</strong></a>：抹茶甜點・招牌生茶凍（<span class="ilink" role="button" tabindex="0" data-modal="nakamura-tokichi">購物筆記</span>）</li>
@@ -235,8 +235,7 @@
 
   <h3>午餐候選（南禪寺・岡崎一帶）</h3>
   <ul>
-    <li><a href="https://maps.app.goo.gl/uJyCWqTHgVMNwkeZ9"><strong>瓢亭</strong></a>：懐石料理（南禪寺畔老舖，⚠️ 高價位、務必事先訂位）</li>
-    <li><a href="https://maps.app.goo.gl/qLyMkkbsq88zCfVg8"><strong>DRAGON BURGER 南禅寺店</strong></a>：漢堡（對小孩友善、較快速）</li>
+    <li><a href="https://maps.app.goo.gl/qLyMkkbsq88zCfVg8"><strong>DRAGON BURGER 南禅寺店</strong></a><span class="pick">當天主選</span>：漢堡</li>
     <li><a href="https://maps.app.goo.gl/yAXh7SJPZv91yYAV7"><strong>Tairikitei（大力亭）</strong></a>：烏龍麵</li>
   </ul>
 
@@ -273,23 +272,17 @@
 
   <h3>推薦餐廳</h3>
 
-  <h4>祇園地區午餐首選（中午有開）</h4>
+  <h4>午餐</h4>
   <ul>
-    <li><a href="https://maps.app.goo.gl/bBNkNUodd9JNMVj86"><strong>Gion Danran（祇園 だんらん）</strong></a>：日式定食・家常料理，中午有開，對家庭友善</li>
-    <li><a href="https://maps.app.goo.gl/B8eVHoo9EV5HisFh6"><strong>Fujimura（祇園 ふじむら）</strong></a>：京風割烹・小料理定食，質感精緻，有提供午間套餐</li>
-    <li><a href="https://maps.app.goo.gl/hq5EEe8LVHDnpKEbA"><strong>Gohanya Murakami（ごはんや 村上）</strong></a>：日式家庭定食，主打香 Q 現炊米飯與溫馨手作主菜，對家庭友善</li>
+    <li><a href="https://maps.app.goo.gl/r5iBcihHBYFJBbsHA"><strong>Kyo Unawa 京うな和本店</strong></a><span class="pick">當天主選</span>：鰻魚飯</li>
+    <li><a href="https://maps.app.goo.gl/hq5EEe8LVHDnpKEbA"><strong>Gohanya Murakami（ごはんや 村上）</strong></a><span class="pick alt">備</span>：日式家庭定食，主打香 Q 現炊米飯與溫馨手作主菜，對家庭友善</li>
   </ul>
 
-  <h4>晚餐與鴨川河畔推薦</h4>
+  <h4>晚餐</h4>
   <ul>
-    <li><a href="https://maps.app.goo.gl/F9xB9ryx2fKjKpWv7"><strong>露瑚</strong></a>（晚餐首推）：京料理・會席，鴨川景觀，有美食也有好景色</li>
-    <li><a href="https://maps.app.goo.gl/2JVvwnwrDmuur17y9"><strong>半兵衛麸 本店</strong></a>：麩・湯葉（豆皮）料理老店，套餐制</li>
-    <li><a href="https://maps.app.goo.gl/tSh5irP3L3CYrWzYA"><strong>四季 よし菜 先斗町</strong></a>：京料理・會席</li>
-    <li><a href="https://maps.app.goo.gl/ApyMhqPo4GYcXQZt5"><strong>いしがま亭（石釜亭）</strong></a>：京鴨料理，石窯燒烤・京鴨涮涮鍋</li>
-    <li><a href="https://maps.app.goo.gl/ukKu2tj3YMcn1X8U7"><strong>Yamachan やまちゃん</strong></a>：燒肉</li>
-    <li><a href="https://maps.app.goo.gl/r5iBcihHBYFJBbsHA"><strong>Kyo Unawa 京うな和本店</strong></a>：鰻魚飯</li>
+    <li><a href="https://maps.app.goo.gl/bBNkNUodd9JNMVj86"><strong>Gion Danran（祇園 だんらん）</strong></a><span class="pick">當天主選</span>：鐵板燒，達人料理必嚐</li>
+    <li><a href="https://maps.app.goo.gl/ApyMhqPo4GYcXQZt5"><strong>いしがま亭（石釜亭）</strong></a><span class="pick alt">備</span>：京鴨料理，石窯燒烤・京鴨涮涮鍋</li>
   </ul>
-  <div class="callout">💡 以上多為熱門店，加上 11 月下旬紅葉旺季，<strong>建議出發前 1～2 週先訂位</strong>（京料理／會席類尤其）。鴨川川床為 5～9 月限定，11 月為室內用餐。</div>
 
   <hr>
 
@@ -318,7 +311,6 @@
   <h3>午餐候選（美山）</h3>
   <ul>
     <li><a href="https://maps.app.goo.gl/FcgXrohzwxmpNSeD7"><strong>おもしろ農民倶楽部</strong></a>：自製火腿・在地食材（10:00–17:00，週二公休）</li>
-    <li><a href="https://maps.app.goo.gl/CGo8X32eaHfB2H4t8"><strong>田ノ蔵</strong></a>：鰻魚飯（8:30–18:30，L.O.18:00，週四公休）</li>
   </ul>
 
   <h3>午茶候選（白鬚神社周邊）</h3>
@@ -375,17 +367,16 @@
   <h2 id="day7">Day 7（11/27）　近江八幡</h2>
   <ul>
     <li>移動：近江舞子<strong>開車</strong>往返（近江八幡一帶），單程約 50 分（經琵琶湖大橋往湖東）</li>
-    <li><a href="https://maps.app.goo.gl/oTfYUvczhe4skqMA7">日牟禮八幡宮前 免費停車場（里道）</a>（停車點，鄰八幡山纜車・近江商人街）</li>
+    <li><a href="https://maps.app.goo.gl/oTfYUvczhe4skqMA7">日牟禮八幡宮前 免費停車場（里道）</a>（停車點，鄰近江商人街）</li>
     <li><a href="https://maps.app.goo.gl/C2eYfxskEpXBtmXB9">近江商人街景（新町通）</a></li>
     <li><a href="https://maps.app.goo.gl/yrfo8PknLiaRp7M49">八幡堀遊船</a>（八幡堀水道賞蘆葦・白牆倉庫景觀）</li>
-    <li><a href="https://maps.app.goo.gl/hDakCtjYuiQV3Teb6">八幡山纜車</a></li>
     <li><a href="https://maps.app.goo.gl/36L6dn7KjgXNaEde6">La Collina</a></li>
     <li>傍晚：<a href="https://maps.app.goo.gl/9jLnTfFDVywgNt5XA"><strong>MITSUI OUTLET PARK 滋賀龍王</strong></a>（龍王町，近江八幡東側，回程順路 outlet）</li>
   </ul>
 
   <h3>午餐候選（近江八幡）</h3>
   <ul>
-    <li><a href="https://maps.app.goo.gl/YdugGGLZvJDznkL3A"><strong>OZEN</strong></a>：沃里斯建築老屋改建的咖啡・餐廳，在地時蔬家常菜御膳定食，另有當季水果百匯</li>
+    <li><a href="https://maps.app.goo.gl/YdugGGLZvJDznkL3A"><strong>OZEN</strong></a><span class="pick">當天主選</span>：沃里斯建築老屋改建的咖啡・餐廳，在地時蔬家常菜御膳定食，另有當季水果百匯</li>
     <li><a href="https://maps.app.goo.gl/hqXy3xsbd4E3B2C78"><strong>aman cafe+food</strong></a>：市立資料館內小店（8 席），手作午間拼盤・蛋包飯</li>
     <li><a href="https://maps.app.goo.gl/xCo9tCHwjMKcuQ4z7"><strong>近江牛 久保田や（Omi Beef Kubotaya）</strong></a>：八幡堀畔近江牛專門店，牛肉蓋飯・壽喜燒等</li>
   </ul>
@@ -820,50 +811,6 @@
       <ul>
         <li>可退稅，<strong>記得攜帶護照正本</strong>（結帳時出示）。</li>
         <li>收據留好；免稅規定請以當時店家與海關說明為準。</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="iwashimizu" hidden>
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="iwashimizu-title">
-    <div class="modal-head">
-      <h3 id="iwashimizu-title">備案：宇治回程順遊石清水八幡宮</h3>
-      <button class="modal-x" type="button" data-close aria-label="關閉">×</button>
-    </div>
-    <div class="modal-body">
-      <p>石清水八幡宮站和住宿旁的京阪「東福寺」站都在<strong>京阪本線</strong>上。宇治回程本來就要在「中書島」轉車，所以只要往大阪方向多坐 2 站，回程也是直達，<strong>只多約 30 分鐘車程</strong>。</p>
-
-      <h4>為什麼值得去：愛迪生與八幡竹</h4>
-      <ul>
-        <li>愛迪生的助手全球找竹子做燈絲時，在男山找到「八幡竹」（真竹）：纖維緊密、有韌性、耐高溫，做成炭化竹絲燈絲後，燈泡壽命延長到 1,000–1,200 小時以上，推動了電燈普及。</li>
-        <li>境內有<a href="https://www.google.com/maps/search/?api=1&query=%E3%82%A8%E3%82%B8%E3%82%BD%E3%83%B3%E8%A8%98%E5%BF%B5%E7%A2%91+%E7%9F%B3%E6%B8%85%E6%B0%B4%E5%85%AB%E5%B9%A1%E5%AE%AE"><strong>愛迪生紀念碑</strong></a>，四周是竹林，旁邊有解說牌；社殿區還有刻愛迪生頭像與燈泡圖案的「合格祈願繪馬」。</li>
-        <li>本殿是國寶（八幡造）。</li>
-      </ul>
-
-      <h4>時間安排（宇治部分往前壓）</h4>
-      <ol>
-        <li>宇治照原行程，一早先去平等院領內部參觀號碼牌；中村藤吉提早吃或當午餐後甜點，<strong>約 14:00 前收掉</strong>（<strong>最晚 14:20 從表參道離開</strong>、14:30 前後在京阪宇治站上車；再晚纜車候車加參拜就會拖到日落後）。</li>
-        <li>京阪宇治 → 京阪宇治線到「中書島」→ 轉京阪本線往<strong>大阪方向</strong> →「<a href="https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E6%B8%85%E6%B0%B4%E5%85%AB%E5%B9%A1%E5%AE%AE%E9%A7%85">石清水八幡宮</a>」站，約 14:40 抵達。</li>
-        <li>站旁搭<strong>參道纜車</strong>上山（3 分鐘）→「ケーブル八幡宮山上」站。</li>
-        <li>步行約 6 分到三之鳥居附近的<strong>愛迪生紀念碑</strong>，再到本殿參拜、看愛迪生繪馬。</li>
-        <li>約 16:15 搭纜車下山 → 京阪本線往<strong>京都方向</strong>直達「東福寺」（約 21 分、¥310，準急／普通；特急不停東福寺）。</li>
-      </ol>
-
-      <h4>纜車（石清水八幡宮參道ケーブル）</h4>
-      <ul>
-        <li>首班 8:10、末班 18:00，<strong>約 30 分一班</strong>（有人搭會加開不定期班）——下山要先看好班次。</li>
-        <li>單程大人 ¥300／小孩 ¥150（來回 ¥600／¥300）；平日、假日同時刻。</li>
-        <li>時刻表：<a href="https://www.keihan.co.jp/traffic/time-fare/iwashimizu.html">京阪官網</a></li>
-      </ul>
-
-      <h4>注意</h4>
-      <ul>
-        <li>神社參拜時間 6:00–18:00，但 11 月下旬約 16:45 日落，山上暗得快又冷——<strong>最好 15:00 前上山</strong>。</li>
-        <li><strong>不要走表參道上山</strong>：一路石階約 30–40 分，帶兩個 2 歲小孩不適合。</li>
-        <li>加分選項：秋季（10–11 月）週末 14:00 有約 30 分的「昇殿參拜」導覽，11/22 是週日剛好有；但要趕上得 13:15 左右就離開宇治，照上面 14:40 抵達的排法會錯過。</li>
-        <li>宇治行程拖到了就放棄，直接照原路回住宿。</li>
       </ul>
     </div>
   </div>
