@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>關西花費</title>
+<style>
+  :root { --line:#111; --muted:#666; --frame:#ccc; --bg:#fff; --fg:#111; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: -apple-system, "Helvetica Neue", "PingFang TC", "Noto Sans TC", sans-serif;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { text-align: center; border-bottom: 2px solid var(--line); padding-bottom: 24px; }
+  h1 { font-size: 1.5rem; margin: 0 0 12px; }
+  .total { font-size: 2.4rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .sub { color: var(--muted); font-size: .85rem; }
+  .cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0 8px; }
+  .cat { border: 1px solid var(--frame); border-radius: 12px; padding: 12px; text-align: center; }
+  .cat .name { color: var(--muted); font-size: .85rem; }
+  .cat .amt { font-size: 1.2rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  h2 { font-size: 1.05rem; margin: 40px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--line);
+       display: flex; justify-content: space-between; }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  td { padding: 6px 0; border-bottom: 1px solid #eee; vertical-align: top; }
+  td.date { width: 6.5em; color: var(--muted); white-space: nowrap; }
+  td.amt { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; padding-left: 12px; }
+  @media (max-width: 520px) { .cats { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>關西花費</h1>
+    <div class="total" id="total"></div>
+    <div class="sub">信用卡入帳金額（含國外交易服務費與折抵），更新到 11/11（三）</div>
+  </header>
+
+  <div class="cats" id="cats"></div>
+  <div id="detail"></div>
+</main>
+
+<script>
+  // 新增花費：在這裡加一行，category 用「機票」「住宿」「其他」其中一個
+  const items = [
+    { date: '9/11（五）', category: '機票', desc: '台灣虎航', amount: 27600 },
+    { date: '9/11（五）', category: '機票', desc: '台灣虎航', amount: 53300 },
+    { date: '9/11（五）', category: '住宿', desc: 'Airbnb（PayPal）', amount: 22203 },
+    { date: '9/11（五）', category: '住宿', desc: '國外交易服務費', amount: 333 },
+    { date: '9/18（五）', category: '住宿', desc: 'Airbnb（PayPal）', amount: 32701 },
+    { date: '9/18（五）', category: '住宿', desc: '信用卡消費折抵', amount: -418 },
+    { date: '9/18（五）', category: '住宿', desc: '國外交易服務費', amount: 491 },
+    { date: '9/13（日）', category: '其他', desc: 'Suica', amount: 310 },
+    { date: '9/13（日）', category: '其他', desc: '國外交易服務費', amount: 5 },
+  ];
+
+  const CATS = ['機票', '住宿', '其他'];
+  const fmt = n => (n < 0 ? '−' : '') + 'NT$' + Math.abs(n).toLocaleString('en-US');
+  const sum = list => list.reduce((s, i) => s + i.amount, 0);
+
+  document.getElementById('total').textContent = fmt(sum(items));
+
+  document.getElementById('cats').innerHTML = CATS.map(c =>
+    `<div class="cat"><div class="name">${c}</div><div class="amt">${fmt(sum(items.filter(i => i.category === c)))}</div></div>`
+  ).join('');
+
+  document.getElementById('detail').innerHTML = CATS.map(c => {
+    const rows = items.filter(i => i.category === c);
+    return `<h2><span>${c}</span><span>${fmt(sum(rows))}</span></h2><table>` +
+      rows.map(i => `<tr><td class="date">${i.date}</td><td>${i.desc}</td><td class="amt">${fmt(i.amount)}</td></tr>`).join('') +
+      '</table>';
+  }).join('');
+</script>
+</body>
+</html>
