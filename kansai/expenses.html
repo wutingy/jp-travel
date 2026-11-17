@@ -25,7 +25,7 @@
        display: flex; justify-content: space-between; }
   table { width: 100%; border-collapse: collapse; font-size: .9rem; }
   td { padding: 6px 0; border-bottom: 1px solid #eee; vertical-align: top; }
-  td.date { width: 6.5em; color: var(--muted); white-space: nowrap; }
+  td.date { width: 7em; color: var(--muted); white-space: nowrap; }
   td.amt { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; padding-left: 12px; }
   @media (max-width: 520px) { .cats { grid-template-columns: 1fr; } }
 </style>
@@ -35,32 +35,51 @@
   <header>
     <h1>關西花費</h1>
     <div class="total" id="total"></div>
-    <div class="sub">信用卡入帳金額（含國外交易服務費與折抵），更新到 11/11（三）</div>
+    <div class="sub">信用卡入帳金額（含國外交易服務費與折抵）與換匯現金，更新到 11/17（二）</div>
+    <div class="sub" id="pending"></div>
   </header>
 
   <div class="cats" id="cats"></div>
+
+  <h2><span>每人平均</span></h2>
+  <table>
+    <tr><td>一位成人來回機票（票價＋稅金，不含託運行李）</td><td class="amt">NT$12,850</td></tr>
+    <tr><td>住宿 1 東福寺：一個大人一晚（NT$32,774 ÷ 4 晚 ÷ 4 個大人）</td><td class="amt">約 NT$2,048</td></tr>
+    <tr><td>住宿 2 近江舞子：一個大人一晚（NT$22,536 ÷ 4 晚 ÷ 4 個大人）</td><td class="amt">約 NT$1,409</td></tr>
+  </table>
   <div id="detail"></div>
 </main>
 
 <script>
   // 新增花費：在這裡加一行，category 用「機票」「住宿」「其他」其中一個
+  // 還沒出帳的寫 jpy、amount 寫 null，出帳後再把台幣填進 amount
   const items = [
     { date: '9/11（五）', category: '機票', desc: '台灣虎航', amount: 27600 },
     { date: '9/11（五）', category: '機票', desc: '台灣虎航', amount: 53300 },
-    { date: '9/11（五）', category: '住宿', desc: 'Airbnb（PayPal）', amount: 22203 },
+    { date: '9/11（五）', category: '住宿', desc: '住宿 2 近江舞子 Airbnb（PayPal）', amount: 22203 },
     { date: '9/11（五）', category: '住宿', desc: '國外交易服務費', amount: 333 },
-    { date: '9/18（五）', category: '住宿', desc: 'Airbnb（PayPal）', amount: 32701 },
+    { date: '9/18（五）', category: '住宿', desc: '住宿 1 東福寺 Airbnb（PayPal）', amount: 32701 },
     { date: '9/18（五）', category: '住宿', desc: '信用卡消費折抵', amount: -418 },
     { date: '9/18（五）', category: '住宿', desc: '國外交易服務費', amount: 491 },
     { date: '9/13（日）', category: '其他', desc: 'Suica', amount: 310 },
     { date: '9/13（日）', category: '其他', desc: '國外交易服務費', amount: 5 },
+    { date: '11/17（二）', category: '其他', desc: '換日幣現金', amount: 4200 },
+    { date: '需確認', category: '其他', desc: '竹生島船票（已刷卡，還沒出帳）', jpy: 13600, amount: null },
+    { date: '11/29（日）', category: '其他', desc: '租車 ORIX（現場刷卡）', jpy: 86268, amount: null },
   ];
 
   const CATS = ['機票', '住宿', '其他'];
   const fmt = n => (n < 0 ? '−' : '') + 'NT$' + Math.abs(n).toLocaleString('en-US');
-  const sum = list => list.reduce((s, i) => s + i.amount, 0);
+  const sum = list => list.reduce((s, i) => s + (i.amount ?? 0), 0);
+  const yen = n => '¥' + n.toLocaleString('en-US');
+  const pending = items.filter(i => i.amount === null);
+  const amtCell = i => i.amount === null ? `${yen(i.jpy)}（台幣待補）` : fmt(i.amount);
 
   document.getElementById('total').textContent = fmt(sum(items));
+  if (pending.length) {
+    document.getElementById('pending').textContent =
+      `另有 ${pending.length} 筆還沒出帳，共 ${yen(pending.reduce((s, i) => s + i.jpy, 0))}，台幣待補，沒算進總額`;
+  }
 
   document.getElementById('cats').innerHTML = CATS.map(c =>
     `<div class="cat"><div class="name">${c}</div><div class="amt">${fmt(sum(items.filter(i => i.category === c)))}</div></div>`
@@ -69,7 +88,7 @@
   document.getElementById('detail').innerHTML = CATS.map(c => {
     const rows = items.filter(i => i.category === c);
     return `<h2><span>${c}</span><span>${fmt(sum(rows))}</span></h2><table>` +
-      rows.map(i => `<tr><td class="date">${i.date}</td><td>${i.desc}</td><td class="amt">${fmt(i.amount)}</td></tr>`).join('') +
+      rows.map(i => `<tr><td class="date">${i.date}</td><td>${i.desc}</td><td class="amt">${amtCell(i)}</td></tr>`).join('') +
       '</table>';
   }).join('');
 </script>
